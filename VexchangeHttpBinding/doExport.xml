@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="937592e3-de64-4d72-bb84-d2436afa88e8" isOneWay="false" action="" name="doExport" bindingOperationName="doExport" type="Request-Response" outputName="doExportResponse" inputName="doExportRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="937592e3-de64-4d72-bb84-d2436afa88e8fileName">doExport</con:setting></con:settings><con:call id="24930f69-ac3f-47e8-9453-5f09a6d44ddd" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vex:doExport>\r
+         <vex:in0>\r
+            <!--Optional:-->\r
+            <mod:applicationID>?</mod:applicationID>\r
+            <!--Optional:-->\r
+            <mod:debitOnly>?</mod:debitOnly>\r
+            <!--Optional:-->\r
+            <mod:endDate>?</mod:endDate>\r
+            <!--Optional:-->\r
+            <mod:endTime>?</mod:endTime>\r
+            <!--Optional:-->\r
+            <mod:include_returns>?</mod:include_returns>\r
+            <!--Optional:-->\r
+            <mod:messageVersion>?</mod:messageVersion>\r
+            <!--Optional:-->\r
+            <mod:password>?</mod:password>\r
+            <!--Optional:-->\r
+            <mod:reportNumber>?</mod:reportNumber>\r
+            <!--Optional:-->\r
+            <mod:startDate>?</mod:startDate>\r
+            <!--Optional:-->\r
+            <mod:startTime>?</mod:startTime>\r
+            <!--Optional:-->\r
+            <mod:transaction_tender>?</mod:transaction_tender>\r
+            <!--Optional:-->\r
+            <mod:username>?</mod:username>\r
+            <!--Optional:-->\r
+            <mod:workDate>?</mod:workDate>\r
+         </vex:in0>\r
+      </vex:doExport>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

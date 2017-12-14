@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="c31d4e8f-78ec-4698-8c31-b498e3ed7513" wsaVersion="NONE" name="VexchangeHttpBinding" type="wsdl" bindingName="{https://www.velocitypayment.com/vexchange-ns}VexchangeHttpBinding" soapVersion="1_1" anonymous="optional" definition="https://demo.velocitypayment.com/vexchange/services/Vexchange?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="c31d4e8f-78ec-4698-8c31-b498e3ed7513fileName">VexchangeHttpBinding</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="https://demo.velocitypayment.com/vexchange/services/Vexchange?WSDL"><con:part><con:url>https://demo.velocitypayment.com/vexchange/services/Vexchange?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="https://www.velocitypayment.com/vexchange-ns" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="https://www.velocitypayment.com/vexchange-ns" xmlns:ns1="http://model.event.vexchange.velocity.govolution.com">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://model.event.vexchange.velocity.govolution.com">
+      <xsd:complexType name="VexchangeWebServiceExportRequestModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="applicationID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="debitOnly" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="endDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="endTime" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="include_returns" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="messageVersion" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reportNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="startDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="startTime" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="transaction_tender" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="workDate" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeWebServiceExportResponseModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="controlRecord" nillable="true" type="ns1:VexchangeControlRecordModel"/>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="headerRecord" nillable="true" type="ns1:VexchangeHeaderRecordModel"/>
+          <xsd:element minOccurs="0" name="transactions" nillable="true" type="ns1:ArrayOfVexchangeExportTransactionModel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeHeaderRecordModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="applicationID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="endDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="endTime" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="modifyDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="modifyTime" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reportNumber" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="startDate" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="startTime" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="workDate" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeControlRecordModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="totalCreditAmount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="totalDebitAmount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="totalErrors" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="totalRecords" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfVexchangeExportTransactionModel">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="VexchangeExportTransactionModel" nillable="true" type="ns1:VexchangeExportTransactionModel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeExportTransactionModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="account_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="account_number_prefix" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="account_number_suffix" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="account_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="address1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="address2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="amount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="approval_code" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="avs_response" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="card_exmo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="card_exyr" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="card_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="check_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="client_account_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="convFeeAmount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="convFeePaymentId" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="convFeeTransactionTypeId" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="countryDesc" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="countryID" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="cvv_response" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="debitNetwork" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="order_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="parent_payment_id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payer_name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="payment_date" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="payment_identifier" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_method" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_plan_category_id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_plan_id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_source" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_time" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="primaryPaymentId" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="principalAmount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="process_date" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="product_id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="reason_code" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="reason_desc" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="remittance_id" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="routing_transit_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="sequence_number" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="settlement_date" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="taxAmount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="transaction_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tx_custom_data" nillable="true" type="ns1:ArrayOfVexchangeTransactionCustomData"/>
+          <xsd:element minOccurs="0" name="tx_invoices_data" nillable="true" type="ns1:ArrayOfVexchangeTransactionInvoicesData"/>
+          <xsd:element minOccurs="0" name="variable_field1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field10" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field3" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field4" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field5" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field6" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field7" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field8" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field9" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfVexchangeTransactionInvoicesData">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="VexchangeTransactionInvoicesData" nillable="true" type="ns1:VexchangeTransactionInvoicesData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeTransactionInvoicesData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="invoice_amount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="invoice_id" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfVexchangeTransactionCustomData">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="VexchangeTransactionCustomData" nillable="true" type="ns1:VexchangeTransactionCustomData"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeTransactionCustomData">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="value" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeWebServiceImportRequestModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="applicationID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="messageVersion" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="password" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="username" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="vexTranModel" nillable="true" type="ns1:ArrayOfVexchangeImportTransactionModel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfVexchangeImportTransactionModel">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="VexchangeImportTransactionModel" nillable="true" type="ns1:VexchangeImportTransactionModel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeImportTransactionModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="account_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="account_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="address1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="address2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="amount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="approval_code" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="avs_response" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="card_exmo" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="card_exyr" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="card_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="check_type" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="countryID" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="cvv_response" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="debitNetwork" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="order_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="parent_payment_id" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payer_name" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="payment_date" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="payment_method" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_source" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="payment_time" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="process_date" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="remittance_id" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="routing_transit_number" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="settlement_date" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="taxAmount" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="transaction_type" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="tx_custom_data" nillable="true" type="ns1:ArrayOfVexchangeTransactionCustomData"/>
+          <xsd:element minOccurs="0" name="variable_field1" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field10" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field2" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field3" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field4" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field5" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field6" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field7" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field8" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="variable_field9" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeWebServiceImportResponseModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="controlRecord" nillable="true" type="ns1:VexchangeControlRecordModel"/>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="transRespModel" nillable="true" type="ns1:ArrayOfVexchangeTransactionResponseModel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfVexchangeTransactionResponseModel">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="VexchangeTransactionResponseModel" nillable="true" type="ns1:VexchangeTransactionResponseModel"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="VexchangeTransactionResponseModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="errorMessage" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="paymentIdentifier" type="xsd:int"/>
+          <xsd:element minOccurs="0" name="remittance_id" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="uploadStatus" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="https://www.velocitypayment.com/vexchange-ns">
+      <xsd:element name="doExport">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="ns1:VexchangeWebServiceExportRequestModel"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="doExportResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="ns1:VexchangeWebServiceExportResponseModel"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="doImport">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="ns1:VexchangeWebServiceImportRequestModel"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="doImportResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="ns1:VexchangeWebServiceImportResponseModel"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="doExportRequest">
+    <wsdl:part name="parameters" element="tns:doExport"/>
+  </wsdl:message>
+  <wsdl:message name="doExportResponse">
+    <wsdl:part name="parameters" element="tns:doExportResponse"/>
+  </wsdl:message>
+  <wsdl:message name="doImportRequest">
+    <wsdl:part name="parameters" element="tns:doImport"/>
+  </wsdl:message>
+  <wsdl:message name="doImportResponse">
+    <wsdl:part name="parameters" element="tns:doImportResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="VexchangePortType">
+    <wsdl:operation name="doExport">
+      <wsdl:input name="doExportRequest" message="tns:doExportRequest"/>
+      <wsdl:output name="doExportResponse" message="tns:doExportResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="doImport">
+      <wsdl:input name="doImportRequest" message="tns:doImportRequest"/>
+      <wsdl:output name="doImportResponse" message="tns:doImportResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VexchangeHttpBinding" type="tns:VexchangePortType">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="doExport">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="doExportRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="doExportResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doImport">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="doImportRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="doImportResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Vexchange">
+    <wsdl:port name="VexchangeHttpPort" binding="tns:VexchangeHttpBinding">
+      <wsdlsoap:address location="https://demo.velocitypayment.com/vexchange/services/Vexchange"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:endpoint>https://qa.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:endpoint>https://qa2.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:endpoint>https://upgrade.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:endpoint>https://www.velocitypayment.com/vexchange/services/Vexchange</con:endpoint></con:endpoints></con:interface>
