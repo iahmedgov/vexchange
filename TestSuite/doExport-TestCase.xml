@@ -33,7 +33,7 @@
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="d974a989-3ca3-4c10-9a8b-33c6708f8dc9" name="doExportWWW"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>VexchangeHttpBinding</con:interface><con:operation>doExport</con:operation><con:request name="doExportWWW" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="d974a989-3ca3-4c10-9a8b-33c6708f8dc9" name="doExportWWW"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>VexchangeHttpBinding</con:interface><con:operation>doExport</con:operation><con:request name="doExportWWW" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://upgrade.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
    <soapenv:Header/>
    <soapenv:Body>
       <vex:doExport>
@@ -43,7 +43,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>12132017</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>03212018</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -55,7 +55,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>12132017</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>03212018</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0600</mod:startTime>
             <!--Optional:-->
@@ -63,7 +63,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>12132017</mod:workDate>
+            <mod:workDate>03212018</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
