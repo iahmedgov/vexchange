@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="doImport TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5fileName">doImport-TestCase</con:setting></con:settings><con:testStep type="request" id="75e87e94-3e27-4379-b021-77334ea9394a" name="doImport"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>VexchangeHttpBinding</con:interface><con:operation>doImport</con:operation><con:request name="doImport" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+<con:testCase id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="doImport TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5fileName">doImport-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="75e87e94-3e27-4379-b021-77334ea9394a" name="doImport">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doImport</con:operation>
+      <con:request name="doImport" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
    <soapenv:Header/>
    <soapenv:Body>
       <vex:doImport>
@@ -35,7 +50,7 @@
                   <!--Optional:-->
                   
                   <!--Optional:-->
-                  <mod:card_exmo>12</mod:card_exmo><mod:card_exyr>2017</mod:card_exyr><mod:card_type>VI</mod:card_type>
+                  <mod:card_exmo>12</mod:card_exmo><mod:card_exyr>2022</mod:card_exyr><mod:card_type>VI</mod:card_type>
                   <!--Optional:-->
                   
                   <!--Optional:-->
@@ -51,17 +66,17 @@
                   <!--Optional:-->
                   <mod:payer_name>James Smithy</mod:payer_name>
                   <!--Optional:-->
-                  <mod:payment_date>05262016</mod:payment_date>
+                  <mod:payment_date>09112019</mod:payment_date>
                   <!--Optional:-->
                   
                   <!--Optional:-->
                   
                   <!--Optional:-->
-                  <mod:payment_method>1</mod:payment_method><mod:payment_source>1</mod:payment_source><mod:payment_time>102536</mod:payment_time>
+                  <mod:payment_method>1</mod:payment_method><mod:payment_source>1</mod:payment_source><mod:payment_time>131839</mod:payment_time>
                   <!--Optional:-->
-                  <mod:process_date>05262016</mod:process_date>
+                  <mod:process_date>09192019</mod:process_date>
                   <!--Optional:-->
-                  <mod:remittance_id>test05262016105</mod:remittance_id>
+                  <mod:remittance_id>test05262016206</mod:remittance_id>
                   <!--Optional:-->
                   <mod:routing_transit_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
                   <!--Optional:-->
@@ -105,4 +120,531 @@
          </vex:in0>
       </vex:doImport>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="3918ae42-e31f-4a23-922a-60f6168978c3" name="doImport-Demo">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doImport</con:operation>
+      <con:request name="doImport-Demo" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doImport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>1286</mod:applicationID><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>password</mod:password>
+            <!--Optional:-->
+            <mod:username>iahmed</mod:username>
+            <!--Optional:-->
+            <mod:vexTranModel>
+               <!--Zero or more repetitions:-->
+               <mod:VexchangeImportTransactionModel>
+                  <!--Optional:-->
+                  <mod:account_number>12**5678</mod:account_number>
+                  <!--Optional:-->
+                  <mod:account_type>P</mod:account_type>
+                  <!--Optional:-->
+                  <mod:address1>2311 york road</mod:address1>
+                  <!--Optional:-->
+                  <mod:address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:amount>10.00</mod:amount>
+                  <!--Optional:-->
+                  <mod:approval_code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:avs_response xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:card_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:check_type>1</mod:check_type><mod:countryID>840</mod:countryID><mod:cvv_response xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:debitNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:order_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:payer_name>James Smithy</mod:payer_name>
+                  <!--Optional:-->
+                  <mod:payment_date>02272019</mod:payment_date>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:payment_method>2</mod:payment_method><mod:payment_source>4</mod:payment_source><mod:payment_time>102536</mod:payment_time>
+                  <!--Optional:-->
+                  <mod:process_date>02272019</mod:process_date>
+                  <!--Optional:-->
+                  <mod:remittance_id>test02192019152</mod:remittance_id>
+                  <!--Optional:-->
+                  <mod:routing_transit_number>256072691</mod:routing_transit_number>
+                  <!--Optional:-->
+                  <mod:settlement_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:taxAmount>2.65</mod:taxAmount>
+                  <!--Optional:-->
+                  <mod:transaction_type>300</mod:transaction_type>
+                  <!--Optional:-->
+                  <mod:tx_custom_data>
+                     <!--Zero or more repetitions:-->
+                     <mod:VexchangeTransactionCustomData>
+                        <!--Optional:-->
+                        <mod:name>hello</mod:name>
+                        <!--Optional:-->
+                        <mod:value>world</mod:value>
+                     </mod:VexchangeTransactionCustomData>
+                  </mod:tx_custom_data>
+                  <!--Optional:-->
+                  <mod:variable_field1>udf1</mod:variable_field1>
+                  <!--Optional:-->
+                  <mod:variable_field10>udf10</mod:variable_field10>
+                  <!--Optional:-->
+                  <mod:variable_field2>udf2</mod:variable_field2>
+                  <!--Optional:-->
+                  <mod:variable_field3>udf3</mod:variable_field3>
+                  <!--Optional:-->
+                  <mod:variable_field4>udf4</mod:variable_field4>
+                  <!--Optional:-->
+                  <mod:variable_field5>udf5</mod:variable_field5>
+                  <!--Optional:-->
+                  <mod:variable_field6>udf6</mod:variable_field6>
+                  <!--Optional:-->
+                  <mod:variable_field7>udf7</mod:variable_field7>
+                  <!--Optional:-->
+                  <mod:variable_field8>udf8</mod:variable_field8>
+                  <!--Optional:-->
+                  <mod:variable_field9>udf9</mod:variable_field9>
+               </mod:VexchangeImportTransactionModel>
+            </mod:vexTranModel>
+         </vex:in0>
+      </vex:doImport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="539e9820-d425-4c68-a83e-da24a0a58834" name="doImport-Demo3590">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doImport</con:operation>
+      <con:request name="doImport-Demo3590" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doImport>
+         <vex:in0>
+            <!--Optional:-->
+            <!--Optional:-->
+            <mod:applicationID>3590</mod:applicationID>
+            <mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>K3rnC0un7y</mod:password>
+            <!--Optional:-->
+            <mod:username>KernCounty</mod:username>
+            <!--Optional:-->
+            <mod:vexTranModel>
+               <!--Zero or more repetitions:-->
+               <mod:VexchangeImportTransactionModel>
+                  <!--Optional:-->
+                  <mod:account_number>****************</mod:account_number>
+                  <!--Optional:-->
+                  <mod:account_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:address1 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:amount>10.00</mod:amount>
+                  <!--Optional:-->
+                  <mod:approval_code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:avs_response xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:card_exmo>-1</mod:card_exmo>
+                  <mod:card_exyr>-1</mod:card_exyr>
+                  <mod:card_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:check_type>-1</mod:check_type><mod:countryID>840</mod:countryID>
+                  <mod:cvv_response xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:debitNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:order_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:parent_payment_id>0</mod:parent_payment_id>
+                  <mod:payer_name xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:payment_date>05012019</mod:payment_date>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:payment_method>4</mod:payment_method>
+                  <mod:payment_source>3</mod:payment_source>
+                  <mod:payment_time>150147</mod:payment_time>
+                  <!--Optional:-->
+                  <mod:process_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:remittance_id>dfgdfg56tdfgdfgdg</mod:remittance_id>
+                  <!--Optional:-->
+                  <mod:routing_transit_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:settlement_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:taxAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:transaction_type>300</mod:transaction_type>
+                  <!--Optional:-->
+                  <mod:tx_custom_data>
+                     <!--Zero or more repetitions:-->
+                     <mod:VexchangeTransactionCustomData>
+                        <!--Optional:-->
+                        <mod:name>hello</mod:name>
+                        <!--Optional:-->
+                        <mod:value>world</mod:value>
+                     </mod:VexchangeTransactionCustomData>
+                  </mod:tx_custom_data>
+                  <!--Optional:-->
+                  <mod:variable_field1>udf1</mod:variable_field1>
+                  <!--Optional:-->
+                  <mod:variable_field10>udf10</mod:variable_field10>
+                  <!--Optional:-->
+                  <mod:variable_field2>udf2</mod:variable_field2>
+                  <!--Optional:-->
+                  <mod:variable_field3>udf3</mod:variable_field3>
+                  <!--Optional:-->
+                  <mod:variable_field4>udf4</mod:variable_field4>
+                  <!--Optional:-->
+                  <mod:variable_field5>udf5</mod:variable_field5>
+                  <!--Optional:-->
+                  <mod:variable_field6>udf6</mod:variable_field6>
+                  <!--Optional:-->
+                  <mod:variable_field7>udf7</mod:variable_field7>
+                  <!--Optional:-->
+                  <mod:variable_field8>udf8</mod:variable_field8>
+                  <!--Optional:-->
+                  <mod:variable_field9>udf9</mod:variable_field9>
+               </mod:VexchangeImportTransactionModel>
+            </mod:vexTranModel>
+         </vex:in0>
+      </vex:doImport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="ccda8144-90db-4c4f-8f24-eb958c68d654" name="doImport-WWW2326">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doImport</con:operation>
+      <con:request name="doImport-WWW2326" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://www.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doImport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>2326</mod:applicationID><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>testo</mod:password>
+            <!--Optional:-->
+            <mod:username>govo</mod:username>
+            <!--Optional:-->
+            <mod:vexTranModel>
+               <!--Zero or more repetitions:-->
+               <mod:VexchangeImportTransactionModel>
+                  <!--Optional:-->
+                  <mod:account_number>41**********1111</mod:account_number>
+                  <!--Optional:-->
+                  <mod:account_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:address1>2311 york road</mod:address1>
+                  <!--Optional:-->
+                  <mod:address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:amount>10.00</mod:amount>
+                  <!--Optional:-->
+                  <mod:approval_code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:avs_response>Y</mod:avs_response>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:card_exmo>12</mod:card_exmo><mod:card_exyr>2022</mod:card_exyr><mod:card_type>VI</mod:card_type>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:countryID>840</mod:countryID><mod:cvv_response>Y</mod:cvv_response>
+                  <!--Optional:-->
+                  <mod:debitNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:order_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:payer_name>James Smithy</mod:payer_name>
+                  <!--Optional:-->
+                  <mod:payment_date>10232019</mod:payment_date>
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  
+                  <!--Optional:-->
+                  <mod:payment_method>1</mod:payment_method><mod:payment_source>1</mod:payment_source><mod:payment_time>083611</mod:payment_time>
+                  <!--Optional:-->
+                  <mod:process_date>10232019</mod:process_date>
+                  <!--Optional:-->
+                  <mod:remittance_id>test10232019101</mod:remittance_id>
+                  <!--Optional:-->
+                  <mod:routing_transit_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:settlement_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:taxAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:transaction_type>300</mod:transaction_type>
+                  <!--Optional:-->
+                  <mod:tx_custom_data>
+                     <!--Zero or more repetitions:-->
+                     <mod:VexchangeTransactionCustomData>
+                        <!--Optional:-->
+                        <mod:name>hello</mod:name>
+                        <!--Optional:-->
+                        <mod:value>world</mod:value>
+                     </mod:VexchangeTransactionCustomData>
+                  </mod:tx_custom_data>
+                  <!--Optional:-->
+                  <mod:variable_field1 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field10 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field5 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field6 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field7 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field8 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field9 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               </mod:VexchangeImportTransactionModel>
+            </mod:vexTranModel>
+         </vex:in0>
+      </vex:doImport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="36049e2f-c704-4f0e-a17f-e16eacdb213c" name="doImport-QA234">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doImport</con:operation>
+      <con:request name="doImport-QA234" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <vex:doImport>\r
+         <vex:in0>\r
+            <!--Optional:-->\r
+            <!--Optional:-->\r
+            <mod:applicationID>234</mod:applicationID>\r
+            <mod:messageVersion>2.0</mod:messageVersion>\r
+            <!--Optional:-->\r
+            <mod:password>password</mod:password>\r
+            <!--Optional:-->\r
+            <mod:username>username</mod:username>\r
+            <!--Optional:-->\r
+            <mod:vexTranModel>\r
+               <!--Zero or more repetitions:-->\r
+               <mod:VexchangeImportTransactionModel>\r
+                  <!--Optional:-->\r
+                  <mod:account_number>41**********1111</mod:account_number>\r
+                  <!--Optional:-->\r
+                  <mod:account_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:address1>2311 york road</mod:address1>\r
+                  <!--Optional:-->\r
+                  <mod:address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:amount>10.00</mod:amount>\r
+                  <!--Optional:-->\r
+                  <mod:approval_code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:avs_response>Y</mod:avs_response>\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <mod:card_exmo>12</mod:card_exmo>\r
+                  <mod:card_exyr>2022</mod:card_exyr>\r
+                  <mod:card_type>VI</mod:card_type>\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <mod:countryID>840</mod:countryID>\r
+                  <mod:cvv_response>Y</mod:cvv_response>\r
+                  <!--Optional:-->\r
+                  <mod:debitNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:order_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <mod:payer_name>James Smithy</mod:payer_name>\r
+                  <!--Optional:-->\r
+                  <mod:payment_date>05172020</mod:payment_date>\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <!--Optional:-->\r
+                  <mod:payment_method>1</mod:payment_method>\r
+                  <mod:payment_source>1</mod:payment_source>\r
+                  <mod:payment_time>142315</mod:payment_time>\r
+                  <!--Optional:-->\r
+                  <mod:process_date>05172020</mod:process_date>\r
+                  <!--Optional:-->\r
+                  <mod:remittance_id>test05172020102</mod:remittance_id>\r
+                  <!--Optional:-->\r
+                  <mod:routing_transit_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:settlement_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:taxAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:transaction_type>300</mod:transaction_type>\r
+                  <!--Optional:-->\r
+                  <mod:tx_custom_data>\r
+                     <!--Zero or more repetitions:-->\r
+                     <mod:VexchangeTransactionCustomData>\r
+                        <!--Optional:-->\r
+                        <mod:name>hello</mod:name>\r
+                        <!--Optional:-->\r
+                        <mod:value>world</mod:value>\r
+                     </mod:VexchangeTransactionCustomData>\r
+                  </mod:tx_custom_data>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field1 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field10 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field5 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field6 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field7 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field8 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+                  <!--Optional:-->\r
+                  <mod:variable_field9 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
+               </mod:VexchangeImportTransactionModel>\r
+            </mod:vexTranModel>\r
+         </vex:in0>\r
+      </vex:doImport>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

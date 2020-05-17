@@ -25,7 +25,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>1286</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>08042017</mod:endDate>
+            <mod:applicationID>1286</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>02272019</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -37,7 +37,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>1</mod:reportNumber><mod:startDate>08042017</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>02272019</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0001</mod:startTime>
             <!--Optional:-->
@@ -45,7 +45,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>iahmed</mod:username>
             <!--Optional:-->
-            <mod:workDate>08042017</mod:workDate>
+            <mod:workDate>02272019</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -55,17 +55,18 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
         <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
         <con:wsrmConfig version="1.2"/>
       </con:request>
     </con:config>
   </con:testStep>
-  <con:testStep type="request" id="d974a989-3ca3-4c10-9a8b-33c6708f8dc9" name="doExportWWW">
+  <con:testStep type="request" id="d974a989-3ca3-4c10-9a8b-33c6708f8dc9" name="doExportWWW2326">
     <con:settings/>
     <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doExport</con:operation>
-      <con:request name="doExportWWW" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
+      <con:request name="doExportWWW2326" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
@@ -81,7 +82,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>12122018</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>05152020</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -93,15 +94,15 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>12122018</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>05152020</mod:startDate>
             <!--Optional:-->
-            <mod:startTime>0600</mod:startTime>
+            <mod:startTime>0400</mod:startTime>
             <!--Optional:-->
             
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>12122018</mod:workDate>
+            <mod:workDate>05152020</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -111,6 +112,7 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
         <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
         <con:wsrmConfig version="1.2"/>
       </con:request>
@@ -137,7 +139,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>234</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>12182018</mod:endDate>
+            <mod:applicationID>234</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>11252019</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -149,7 +151,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>12182018</mod:startDate>
+            <mod:reportNumber>1</mod:reportNumber><mod:startDate>11252019</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0001</mod:startTime>
             <!--Optional:-->
@@ -157,7 +159,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>username</mod:username>
             <!--Optional:-->
-            <mod:workDate>12182018</mod:workDate>
+            <mod:workDate>11252019</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -167,6 +169,7 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
         <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
         <con:wsrmConfig version="1.2"/>
       </con:request>
@@ -279,6 +282,234 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="1b2dc7dd-a2ce-4b62-9350-5c5beef963a8" name="doExport-Demo">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doExport</con:operation>
+      <con:request name="doExport-Demo" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doExport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>1286</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>02272019</mod:endDate>
+            <!--Optional:-->
+            <mod:endTime>2359</mod:endTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:include_returns>true</mod:include_returns><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>password</mod:password>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>02272019</mod:startDate>
+            <!--Optional:-->
+            <mod:startTime>0001</mod:startTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:transaction_tender>3</mod:transaction_tender><mod:username>iahmed</mod:username>
+            <!--Optional:-->
+            <mod:workDate>02272019</mod:workDate>
+         </vex:in0>
+      </vex:doExport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="78ac6029-a499-4f8d-adf3-ece4578ec01f" name="doExport-Demo3590">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doExport</con:operation>
+      <con:request name="doExport-Demo3590" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo2.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doExport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>3590</mod:applicationID><mod:debitOnly>true</mod:debitOnly><mod:endDate>05312019</mod:endDate>
+            <!--Optional:-->
+            <mod:endTime>2359</mod:endTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:include_returns>true</mod:include_returns><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>K3rnC0un7y</mod:password>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>05312019</mod:startDate>
+            <!--Optional:-->
+            <mod:startTime>0001</mod:startTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:transaction_tender>3</mod:transaction_tender><mod:username>KernCounty</mod:username>
+            <!--Optional:-->
+            <mod:workDate>05312019</mod:workDate>
+         </vex:in0>
+      </vex:doExport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="97ad987e-4b4e-4af9-ab56-1ccbed6490d8" name="doExport-Demo3102">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doExport</con:operation>
+      <con:request name="doExport-Demo3102" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doExport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>3102</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>10302019</mod:endDate>
+            <!--Optional:-->
+            <mod:endTime>2359</mod:endTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:include_returns>true</mod:include_returns><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>nu17tow5</mod:password>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>10302019</mod:startDate>
+            <!--Optional:-->
+            <mod:startTime>0001</mod:startTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:username>utilli_test</mod:username>
+            <!--Optional:-->
+            <mod:workDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         </vex:in0>
+      </vex:doExport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="2dd69d91-0377-42ca-abb7-b9b13ab1b705" name="doExportUpgrade2326">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doExport</con:operation>
+      <con:request name="doExportUpgrade2326" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://upgrade.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doExport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>10232019</mod:endDate>
+            <!--Optional:-->
+            <mod:endTime>2359</mod:endTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:include_returns>true</mod:include_returns><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>testo</mod:password>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>10232019</mod:startDate>
+            <!--Optional:-->
+            <mod:startTime>0400</mod:startTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
+            <!--Optional:-->
+            <mod:workDate>10232019</mod:workDate>
+         </vex:in0>
+      </vex:doExport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
         <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
         <con:wsrmConfig version="1.2"/>
       </con:request>

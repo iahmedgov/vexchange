@@ -1,0 +1,6 @@
+VexchangeHttpBinding\doExport.xml
+VexchangeHttpBinding\doImport.xml
+TestSuite\doExport-TestCase.xml
+TestSuite\doImport-TestCase.xml
+TestSuite\doExport-TestCase1.xml
+TestSuite\doExport-TestCase2.xml

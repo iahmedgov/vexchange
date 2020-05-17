@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="6ff8bb9b-da37-4ed9-bd1f-fa4be9596179" activeEnvironment="Default environment" name="VExchange01292016" resourceRoot="" soapui-version="6.0.0" lastOpened="2018-03-21T07:35:47.451-04:00" updated="2.1.0 20170726-1100" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="6ff8bb9b-da37-4ed9-bd1f-fa4be9596179" activeEnvironment="Default environment" name="VExchange01292016" resourceRoot="" soapui-version="6.0.0" lastOpened="2018-03-21T07:35:47.451-04:00" updated="2.6.0" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="6ff8bb9b-da37-4ed9-bd1f-fa4be9596179fileName">VExchange01292016-soapui-project</con:setting>
   </con:settings>
