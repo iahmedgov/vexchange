@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5fileName">doImport-TestCase</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="request" id="75e87e94-3e27-4379-b021-77334ea9394a" name="doImport">
     <con:settings/>
     <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

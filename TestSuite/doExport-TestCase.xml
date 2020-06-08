@@ -82,7 +82,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>05152020</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>05202020</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -94,7 +94,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>05152020</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>05202020</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0400</mod:startTime>
             <!--Optional:-->
@@ -102,7 +102,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>05152020</mod:workDate>
+            <mod:workDate>05202020</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -479,7 +479,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>10232019</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>05202020</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -491,7 +491,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>10232019</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>05202020</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0400</mod:startTime>
             <!--Optional:-->
@@ -499,7 +499,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>10232019</mod:workDate>
+            <mod:workDate>05202020</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
