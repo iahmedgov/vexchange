@@ -71,7 +71,7 @@
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>https://www.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:endpoint>https://upgrade.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
         <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
    <soapenv:Header/>
    <soapenv:Body>
@@ -82,7 +82,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>06242020</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>09092020</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -94,7 +94,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>06242020</mod:startDate>
+            <mod:reportNumber>1</mod:reportNumber><mod:startDate>09092020</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0300</mod:startTime>
             <!--Optional:-->
@@ -102,7 +102,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>06242020</mod:workDate>
+            <mod:workDate>09092020</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
