@@ -82,7 +82,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>09092020</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>12102020</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -94,7 +94,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>1</mod:reportNumber><mod:startDate>09092020</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>12102020</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0300</mod:startTime>
             <!--Optional:-->
@@ -102,7 +102,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>09092020</mod:workDate>
+            <mod:workDate>12102020</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
